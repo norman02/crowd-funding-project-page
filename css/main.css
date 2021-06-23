@@ -3,7 +3,13 @@
 /* returns the rem value of the pixels
  * @param {float} pixels 
  */
+/* placeholders */
+/* Set a standard margin */
 @import url("https://fonts.googleapis.com/css2?family=Commissioner:wght@400;500;700&display=swap");
+nav {
+  margin: 0 6.4vw;
+}
+
 * {
   border: 0;
   margin: 0;
@@ -68,5 +74,12 @@ p {
   color: #7a7a7a;
   font-size: 0.875rem;
   line-height: 1.5rem;
+}
+
+nav {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
 }
 /*# sourceMappingURL=main.css.map */
