@@ -7,3 +7,21 @@
 
 @import 'layouts/nav';
 @import 'layouts/header';
+
+body {
+    background-color: hsla(0, 0%, 98%, 1);
+}
+
+.home {
+   @extend %margin;
+   
+
+   &--content-container {
+    background: hsla(0, 0%, 100%, 1) 0% 0% no-repeat padding-box;
+    border: 1px solid hsla(0, 0%, 0%, 0.05);
+    border-radius: 8px;
+    margin-bottom: toRem(24);
+    opacity: 1;
+    padding: toRem(40) toRem(24);
+   }
+}
