@@ -45,5 +45,48 @@ body {
        }
    }
 
+   &--stats {
+       text-align: center;
+
+       h2,
+       h3,
+       h4 {
+           font-size: toRem(32);
+           line-height: toRem(38);
+       }
+
+
+       p {
+           line-height: toRem(17);
+           margin-top: toRem(17);
+       }
+
+
+       .line {
+        background: hsla(0, 0%, 100%, 1) 0% 0% no-repeat padding-box;
+        border: 1px solid hsla(0, 0%, 0%, 0.05);
+        border-radius: 8px;
+        margin: toRem(27) auto toRem(24) auto;
+        opacity: 1;
+        width: 80px;
+       }
+
+       .status-bar {
+            position: relative;
+            background: $status-bar-bg;
+            border-radius: 34px;
+            height: 12px;
+            margin-top: toRem(35);
+
+            &--status {
+                width: 218px;
+                height: 12px;
+                background: $status-bg;
+                border-radius: 34px;
+                opacity: 1;
+            }
+       }
+   }
+
 }
 

@@ -135,4 +135,45 @@ body {
   display: flex;
   justify-content: space-between;
 }
+
+.home--stats {
+  text-align: center;
+}
+
+.home--stats h2,
+.home--stats h3,
+.home--stats h4 {
+  font-size: 2rem;
+  line-height: 2.375rem;
+}
+
+.home--stats p {
+  line-height: 1.0625rem;
+  margin-top: 1.0625rem;
+}
+
+.home--stats .line {
+  background: white 0% 0% no-repeat padding-box;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
+  margin: 1.6875rem auto 1.5rem auto;
+  opacity: 1;
+  width: 80px;
+}
+
+.home--stats .status-bar {
+  position: relative;
+  background: rgba(0, 0, 0, 0.05);
+  border-radius: 34px;
+  height: 12px;
+  margin-top: 2.1875rem;
+}
+
+.home--stats .status-bar--status {
+  width: 218px;
+  height: 12px;
+  background: #3cb4ac;
+  border-radius: 34px;
+  opacity: 1;
+}
 /*# sourceMappingURL=main.css.map */
