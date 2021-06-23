@@ -80,6 +80,12 @@ nav {
   align-items: center;
   display: flex;
   justify-content: space-between;
-  margin-top: 2rem;
+}
+
+header {
+  background-image: url("../images/image-hero-mobile.jpg");
+  background-size: cover;
+  padding-bottom: 66.13vw;
+  padding-top: 8.53vw;
 }
 /*# sourceMappingURL=main.css.map */
