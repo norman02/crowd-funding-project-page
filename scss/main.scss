@@ -5,11 +5,13 @@
 @import 'base/reset';
 @import 'base/typography';
 
+@import 'components/buttons';
+
 @import 'layouts/nav';
 @import 'layouts/header';
 
 body {
-    background-color: hsla(0, 0%, 98%, 1);
+    background-color: $main-bg-color;
 }
 
 .home {
@@ -17,11 +19,13 @@ body {
    
 
    &--content-container {
-    background: hsla(0, 0%, 100%, 1) 0% 0% no-repeat padding-box;
-    border: 1px solid hsla(0, 0%, 0%, 0.05);
+    background: $container-bg-color;
+    border: 1px solid $container-border-color;
     border-radius: 8px;
     margin-bottom: toRem(24);
     opacity: 1;
     padding: toRem(40) toRem(24);
    }
+
 }
+

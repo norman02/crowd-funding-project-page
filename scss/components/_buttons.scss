@@ -1,0 +1,12 @@
+.btn {
+    border-radius: 33.5px;
+    font-size: toRem(16);
+    font-weight: 700;
+    line-height: toRem(19);
+    padding: toRem(18) toRem(42) toRem(22) toRem(42);
+
+    &--green {
+        background-color: $btn-bg-color;
+        color: $btn-text-color;
+    }
+}
