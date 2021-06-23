@@ -1,0 +1,8 @@
+/*functions */
+
+/* returns the rem value of the pixels
+ * @param {float} pixels 
+ */
+ @function toRem($pixels) {
+    @return ($pixels/16) + rem;
+}
