@@ -17,7 +17,6 @@ body {
 .home {
    @extend %margin;
    
-
    &--content-container {
     background: $container-bg-color;
     border: 1px solid $container-border-color;
@@ -25,6 +24,25 @@ body {
     margin-bottom: toRem(24);
     opacity: 1;
     padding: toRem(40) toRem(24);
+   }
+
+   &--cta {
+       text-align: center;
+
+       h1 {
+           margin: 0 toRem(20);
+       }
+
+       p {
+           margin-bottom: toRem(34);
+           margin-top: toRem(34);
+       }
+
+       .btn-container {
+           align-items: center;
+           display: flex;
+           justify-content: space-between;
+       }
    }
 
 }
