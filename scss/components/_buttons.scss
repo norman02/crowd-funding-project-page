@@ -9,4 +9,10 @@
         background-color: $btn-bg-color;
         color: $btn-text-color;
     }
+
+    &--out {
+       background-color: hsla(0, 0%, 18%, 0.5); 
+       color: white;
+       opacity: 0.5;
+    }
 }
