@@ -202,11 +202,11 @@ body {
 }
 
 .home--stats .status-bar--status {
-  width: 218px;
   height: 12px;
   background: #3cb4ac;
   border-radius: 34px;
   opacity: 1;
+  width: 0;
 }
 
 .home--about p {

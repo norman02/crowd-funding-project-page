@@ -21,3 +21,28 @@ const products = [
         inStock: false,
     }
 ]
+
+const funding = {
+    funding: 89914,
+    backers: 5007,
+    daysLeft: 56,
+    neededFunds: 100000,
+}
+
+function numberWithCommas(x) {
+    return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+}
+
+const renderFunding = () => {
+    const fundingElem = document.getElementById('total-raised')
+    const backerElem = document.getElementById('backers')
+    const daysElem = document.getElementById('days')
+    const status = document.getElementById('status')
+
+    fundingElem.innerHTML = `$${numberWithCommas(funding.funding)}`;
+    backerElem.innerHTML = `${numberWithCommas(funding.backers)}`
+    daysElem.innerHTML = `${numberWithCommas(funding.daysLeft)}`
+    status.style.width = `${(funding.funding / funding.neededFunds)*100}%`
+}
+
+renderFunding()

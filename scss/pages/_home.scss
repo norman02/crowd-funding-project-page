@@ -67,11 +67,11 @@ body {
             margin-top: toRem(35);
 
             &--status {
-                width: 218px;
                 height: 12px;
                 background: $status-bg;
                 border-radius: 34px;
                 opacity: 1;
+                width: 0;
             }
        }
    }
