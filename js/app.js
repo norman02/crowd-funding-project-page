@@ -42,7 +42,45 @@ const renderFunding = () => {
     fundingElem.innerHTML = `$${numberWithCommas(funding.funding)}`;
     backerElem.innerHTML = `${numberWithCommas(funding.backers)}`
     daysElem.innerHTML = `${numberWithCommas(funding.daysLeft)}`
-    status.style.width = `${(funding.funding / funding.neededFunds)*100}%`
+    status.style.width = `${(funding.funding / funding.neededFunds) * 100}%`
+}
+
+const renderButton = (stock) => {
+    if (stock > 0) {
+        return (
+            `<button class="btn btn--green">Select Reward</button>`
+        )
+    }
+    return (
+        `<button class="btn btn--out">Out of Stock</button>`
+    )
+    
+}
+
+const renderProducts = () => {
+    const productElem = document.getElementById('products')
+
+    productElem.innerHTML = products.map(product => {
+        return (
+            `<section class="card home--pledge pledge-cards">
+            <h2>${product.name}</h2>
+
+            <p class="pledge-amt">$${product.pledge} or more</p>
+
+            <p>${product.description}</p>
+
+            <p>
+                <span class="stock-remaining" id="bamboo-remaining">${product.stock}</span> left
+            </p>
+
+            ${renderButton(product.stock)}
+            
+            </section>`
+        )
+
+
+    }).join("")
 }
 
 renderFunding()
+renderProducts()
