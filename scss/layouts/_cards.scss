@@ -1,0 +1,31 @@
+.card {
+    border: 1px solid hsla(0, 0%, 0%, .15);
+    border-radius: 8px;
+    margin-bottom: toRem(24);
+    opacity: 1;
+    padding: toRem(24);
+
+    h2 {
+       font-size: toRem(14); 
+       font-weight: 700;
+       line-height: toRem(17);
+    }
+
+    .pledge-amt {
+        color: $highlight-text;
+        margin-top: toRem(11);
+    }
+
+    .stock-remaining {
+        color: $heading-text-color;
+        font-size: toRem(32);
+        font-weight: 700;
+        line-height: toRem(38);
+        margin-top: toRem(34);
+        margin-right: toRem(6);
+    }
+
+    .btn {
+        margin-top: toRem(32);
+    }    
+}
