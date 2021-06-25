@@ -62,7 +62,7 @@ const renderProducts = () => {
 
     productElem.innerHTML = products.map(product => {
         return (
-            `<section class="card home--pledge pledge-cards">
+            `<section class="card">
             <h2>${product.name}</h2>
 
             <p class="pledge-amt">$${product.pledge} or more</p>
@@ -81,6 +81,16 @@ const renderProducts = () => {
 
     }).join("")
 }
+
+const burger = document.getElementById('burger')
+const menu = document.querySelector('.menu')
+const mask = document.querySelector('.mask')
+
+burger.addEventListener('click', ()=> {
+    burger.classList.toggle('change')
+    menu.classList.toggle('active')
+    mask.classList.toggle('active')
+})
 
 renderFunding()
 renderProducts()

@@ -3,4 +3,48 @@ nav {
     align-items: center;
     display: flex;
     justify-content: space-between;
+    position: relative;
+
+    .logo {
+        z-index: 10;
+    }
+
+    .burger {
+        z-index: 10;
+    }
+
+    
+}
+
+.menu {
+    background-color: white;
+    border: 1px solid #0000000D;
+    border-radius: 8px;
+    display: none;
+    opacity: 1;
+    position: absolute;
+    top: toRem(38);
+    width: 100%;
+    z-index: 10;
+
+    li {
+    border-bottom: 1px solid hsla(0, 0%, 18%, 0.10);
+    padding: toRem(24);
+    }
+}
+
+.mask {
+        background: transparent linear-gradient(180deg, hsla(0, 0%, 0%, 1) 0%, hsla(0, 0%, 0%, 0) 100%) 0% 0% no-repeat padding-box;
+        display: none;
+        height: 100vh;
+        left: 0;
+        opacity: 0.6;
+        position: absolute;
+        top: -10vw;
+        width: 100vw;
+        z-index: 5;
+}
+
+.active {
+    display: block;
 }

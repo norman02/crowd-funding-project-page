@@ -99,6 +99,48 @@ nav {
   align-items: center;
   display: flex;
   justify-content: space-between;
+  position: relative;
+}
+
+nav .logo {
+  z-index: 10;
+}
+
+nav .burger {
+  z-index: 10;
+}
+
+.menu {
+  background-color: white;
+  border: 1px solid #0000000D;
+  border-radius: 8px;
+  display: none;
+  opacity: 1;
+  position: absolute;
+  top: 2.375rem;
+  width: 100%;
+  z-index: 10;
+}
+
+.menu li {
+  border-bottom: 1px solid rgba(46, 46, 46, 0.1);
+  padding: 1.5rem;
+}
+
+.mask {
+  background: transparent linear-gradient(180deg, black 0%, rgba(0, 0, 0, 0) 100%) 0% 0% no-repeat padding-box;
+  display: none;
+  height: 100vh;
+  left: 0;
+  opacity: 0.6;
+  position: absolute;
+  top: -10vw;
+  width: 100vw;
+  z-index: 5;
+}
+
+.active {
+  display: block;
 }
 
 header {
@@ -220,5 +262,30 @@ body {
 
 .home--pledge {
   margin-top: 4.3125rem;
+}
+
+.burger {
+  display: inline;
+}
+
+.burger .bar1,
+.burger .bar2,
+.burger .bar3 {
+  width: 25px;
+  height: 2px;
+  background-color: white;
+  margin: 6px 0;
+}
+
+.change .bar1 {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.change .bar2 {
+  opacity: 0;
+}
+
+.change .bar3 {
+  transform: rotate(45deg) translate(-5px, -6px);
 }
 /*# sourceMappingURL=main.css.map */
